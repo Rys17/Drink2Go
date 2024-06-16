@@ -1,0 +1,101 @@
+.user-menu {
+  display: flex;
+  gap: 44px;
+
+  @media (min-width: $tablet-width) {
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 60px;
+  }
+}
+
+.user-menu__item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.user-menu__link {
+  display: block;
+
+  &--profile {
+    content: "";
+    mask-image: url("../../icons/user.svg");
+    background-color: $basic-black;
+    background-size: 16px, 16px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+  }
+
+  &--basket {
+    mask-image: url("../../icons/basket.svg");
+    background-color: $basic-black;
+    background-size: 16px, 16px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.user-menu__link-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.user-menu__burger {
+  width: 16px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  background: aquamarine;
+  position: relative;
+
+
+  span {
+    width: 16px;
+    height: 1.5px;
+    background: $basic-black;
+    transition: 0, 3s ease;
+    position: absolute;
+    left: 0;
+
+    &:nth-child(1) {
+      transform: translateY(-6px);
+
+    }
+
+    &:nth-child(3) {
+      transform: translateY(6px);
+    }
+  }
+
+  &--active {
+    span {
+      &:nth-child(1) {
+        transform:  rotate(-45deg);
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(3) {
+        transform:  rotate(45deg);
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
