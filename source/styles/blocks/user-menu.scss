@@ -45,6 +45,11 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    color: $basic-black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
   }
 }
 
@@ -53,13 +58,12 @@
   height: 12px;
   padding: 0;
   border: none;
-  background: aquamarine;
   position: relative;
-
+  background-color: $basic-white;
 
   span {
     width: 16px;
-    height: 1.5px;
+    height: 1.4px;
     background: $basic-black;
     transition: 0, 3s ease;
     position: absolute;

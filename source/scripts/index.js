@@ -1,22 +1,30 @@
 /* в этот файл добавляет скрипты*/
-const navList = document.querySelector('.header__nav-list');
-const navBurger = document.querySelector('.user-menu__burger');
-
-
-const onNavBurgerClick = () => {
-  if (navList.classList.contains('header__nav-list--active')) {
-    navList.classList.remove('header__nav-list--active');
-    navBurger.classList.remove('user-menu__burger--active');
-  } else {
-    navList.classList.add('header__nav-list--active');
-    navBurger.classList.add('user-menu__burger--active');
-  }
-};
-
-const navBurgerInit = () => {
-  if (navBurger) {
-    navBurger.addEventListener('click', onNavBurgerClick);
-  }
-};
+import {
+  navBurgerInit
+} from './nav';
+import {
+  updateSlider
+} from './slaider';
+import {
+  rangeSliderInit
+} from './rage';
 
 navBurgerInit();
+updateSlider();
+
+const init = () => {
+  rangeSliderInit();
+};
+
+window.addEventListener('DOMContentLoaded', init);
+
+const docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  (el) => {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);

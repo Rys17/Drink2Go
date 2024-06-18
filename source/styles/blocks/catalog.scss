@@ -1,0 +1,143 @@
+.catalog {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $background-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.catalog__tag {
+  padding-top: 52px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+  }
+}
+
+.catalog__heading {
+  margin: 0 0 0 -4px;
+  padding: 4px 20px 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 42px;
+    line-height: 64px;
+    padding: 3px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+  }
+}
+
+.catalog__block {
+  @media (max-width: $mobile-width) {
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 318px min-content;
+    grid-template-rows: min-content;
+    column-gap: 30px;
+    row-gap: 60px;
+    padding: 0 40px;
+  }
+}
+
+.catalog__sort {
+  display: flex;
+  margin: 44px 0 20px;
+  padding: 0 5px;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 41px 0 31px;
+    padding: 0 0 0 5px;
+  }
+}
+
+.catalog__sort-title {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.catalog__select {
+  color: $basic-primary;
+  background: url("/icons/arrow-down.svg") no-repeat transparent;
+  background-size: 10px 6px;
+  background-position: right 13px top 9px;
+  font-family: "Monsterrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  width: 168px;
+  height: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: lowercase;
+  text-align: left;
+  letter-spacing: 1px;
+  appearance: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 13px;
+    background-position: right 10px top 9px;
+  }
+}
+
+.catalog__select:hover,
+.catalog__select:focus {
+  outline: none;
+  background-color: $basic-secondary;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__pagination {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 116px;
+    grid-column: -2;
+  }
+}

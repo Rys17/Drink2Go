@@ -1,0 +1,32 @@
+.button {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  color: $basic-white;
+  background-color: $basic-primary;
+}
+
+.button:hover {
+  background-color: $background-grey;
+  color: $basic-white;
+}
+
+.button:focus {
+  background-color: $background-grey;
+  outline: none;
+  color: $basic-white;
+}
+
+.button:active {
+  background-color: $darker-primary;
+  color: $basic-white;
+}
+
+.button:disabled {
+  background-color: $basic-grey;
+  color: $basic-white;
+}
