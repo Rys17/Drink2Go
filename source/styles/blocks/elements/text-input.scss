@@ -1,0 +1,47 @@
+.text-input {
+  padding: 0 0 0 2px;
+}
+
+.text-input__label {
+  display: none;
+}
+
+.text-input__input {
+  width: 116px;
+  padding: 6px 10px;
+  color: $basic-grey;
+  box-sizing: border-box;
+  border: 2px solid $basic-primary;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 10px;
+    width: 87px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 40px;
+  }
+}
+
+.text-input__input--max {
+  color: $basic-black;
+}
+
+.text-input__input:focus {
+  outline: none;
+  border: 2px solid $darker-primary;
+}
+
+.text-input__input:hover {
+  color: $basic-black;
+  border: 2px solid $lighter-primary;
+}

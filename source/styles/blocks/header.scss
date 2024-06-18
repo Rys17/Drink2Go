@@ -49,31 +49,33 @@
   position: absolute;
   text-transform: uppercase;
   width: 100%;
-  min-height: 289px;
+  min-height: 229px;
   left: 0;
-  bottom: 0;
-  transform: translateY(118px);
+  top: -230px;
   z-index: 999;
   background-color: $basic-white;
   text-align: center;
+  color: $basic-black;
 
 
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     gap: 40px;
-    position:static ;
+    position: static;
     font-size: 12px;
     font-weight: 500;
     line-height: 16px;
+    min-height: auto;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 60px;
   }
+
   &--active {
-    transform: translateY(100%);
+    transform: translateY(135%);
   }
 }
 
@@ -87,4 +89,8 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
+}
+
+.header__nav-link {
+  color: $basic-black;
 }

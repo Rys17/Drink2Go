@@ -1,0 +1,191 @@
+.features {
+  margin: 0;
+  padding: 50px 0 60px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 63px 35px 102px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 99px 30px 110px;
+  }
+}
+
+.features__heading {
+  margin: 0;
+  padding: 5px 17px 0 13px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    padding: 3px 22px 0 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 4px 13px 0 11px;
+  }
+}
+
+.features__heading-name {
+  @media (min-width: $tablet-width) {
+    padding-left: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    padding-top: 60px;
+    row-gap: 50px;
+    column-gap: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    row-gap: unset;
+    column-gap: 9px;
+  }
+}
+
+.features__item {
+  padding: 0 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 98px 0 0;
+  }
+}
+
+.features__icon {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 56px;
+  top: 34px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: 143px;
+  }
+}
+
+.features__icon--speed {
+  background: url("/icons/icon-advantages-time.svg") no-repeat center center;
+  top: 36px;
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
+  }
+}
+
+.features__icon--fit {
+  background: url("/icons/icon-advantages-convenience.svg") no-repeat center center;
+
+  @media (min-width: $tablet-width) {
+    top: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+  }
+}
+
+.features__icon--energy {
+  background: url("/icons/icon-advantages-cheerfulness.svg") no-repeat center center;
+}
+
+.features__icon--eco {
+  background: url("/icons/icon-advantages-ecology.svg") no-repeat center center;
+  top: 31px;
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: 140px;
+  }
+}
+
+.features__title {
+  margin: 98px 0 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.features__title--speed {
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: unset;
+  }
+}
+
+.features__text {
+  margin: 0;
+  padding: 4px 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px;
+  }
+}
+
+.features__text--fit {
+  padding: 4px 24px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 35px 0;
+  }
+}
